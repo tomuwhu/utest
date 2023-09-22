@@ -4,7 +4,10 @@ class myMap extends Map {
             var l = super.get(p)
             if (typeof l == 'number' && typeof r == 'number')
                 super.set(p, (r + l) / 2)
-            else super.set(p, l + r)
+            else if(typeof l == 'string' && typeof r == 'string')
+                super.set(p, l + r)
+            else
+                super.set(p, r)
         } else super.set(p, r)
     }
 }

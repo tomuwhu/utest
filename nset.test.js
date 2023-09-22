@@ -6,3 +6,10 @@ test('average test', () => {
     s.set(2, 6)
     expect(s.get(2)).toBe(5)
 })
+test('string test', () => {
+    s = new myMap()
+    s.set(2, "a")
+    s.set(3, "b")
+    s.set(2, "c")
+    expect(s.get(2)).toBe("ac")
+})
