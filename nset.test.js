@@ -1,4 +1,4 @@
-const myMap = require('./nset')
+const myMap = require('./mymap')
 test('average test', () => {
     s = new myMap()
     s.set(2, 4)
