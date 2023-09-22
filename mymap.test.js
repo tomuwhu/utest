@@ -15,6 +15,14 @@ test('number owerwrite test', () => {
     s.set(2, "Cica")
     expect(s.get(2)).toBe("Cica")
 })
+test('string owerwrite test', () => {
+    s = new myMap()
+    s.set(2, "Cica")
+    s.set(2, 4)
+    s.set(3, 7)
+    s.set(2, 6)
+    expect(s.get(2)).toBe(24)
+})
 test('string test', () => {
     s = new myMap()
     s.set(2, "a")
