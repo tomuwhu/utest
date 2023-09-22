@@ -1,11 +1,19 @@
 const myMap = require('./mymap')
-test('number_prod test', () => {
+test('number production test', () => {
     s = new myMap()
     s.set(2, 4)
     s.set(3, 7)
     s.set(2, 6)
     s.set(2, 2)
     expect(s.get(2)).toBe(48)
+})
+test('number owerwrite test', () => {
+    s = new myMap()
+    s.set(2, 4)
+    s.set(3, 7)
+    s.set(2, 6)
+    s.set(2, "Cica")
+    expect(s.get(2)).toBe("Cica")
 })
 test('string test', () => {
     s = new myMap()
