@@ -4,7 +4,8 @@ test('number_prod test', () => {
     s.set(2, 4)
     s.set(3, 7)
     s.set(2, 6)
-    expect(s.get(2)).toBe(24)
+    s.set(2, 2)
+    expect(s.get(2)).toBe(48)
 })
 test('string test', () => {
     s = new myMap()
